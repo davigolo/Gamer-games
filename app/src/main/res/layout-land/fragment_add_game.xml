@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/add_games_main_constraint_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search_view_imdb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/search_view_borders"
+        android:hint="@string/search_on_rawg"
+        app:iconifiedByDefault="false"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Search on IMDb" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/imdb_movies_recycler_view"
+        android:layout_width="424dp"
+        android:layout_height="301dp"
+        android:background="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_view_imdb" />
+
+    <ProgressBar
+        android:id="@+id/searched_games_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/imdb_movies_recycler_view"
+        app:layout_constraintBottom_toBottomOf="@id/imdb_movies_recycler_view"
+        app:layout_constraintStart_toStartOf="@id/imdb_movies_recycler_view"
+        app:layout_constraintEnd_toEndOf="@id/imdb_movies_recycler_view"
+        android:visibility="invisible"
+        />
+    <TextView
+        android:id="@+id/tv_error_search_game_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="@id/imdb_movies_recycler_view"
+        app:layout_constraintBottom_toBottomOf="@id/imdb_movies_recycler_view"
+        android:visibility="invisible"
+        android:textColor="@color/red"
+        android:textSize="@dimen/error_text_size"
+        tools:visibility="visible"
+        tools:text="400: Bad request"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_layout_game_title"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="50"
+        app:helperText="Required*"
+        app:helperTextTextColor="@color/red"
+        app:layout_constraintTop_toBottomOf="@+id/search_view_imdb">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_game_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/enter_game_title" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_game_description"
+        app:layout_constraintBottom_toTopOf="@+id/input_layout_game_description"
+        app:layout_constraintLeft_toLeftOf="@+id/input_layout_game_description" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_layout_game_description"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="500"
+        app:helperTextTextColor="@color/red"
+        app:layout_constraintEnd_toEndOf="@id/input_layout_game_title"
+        app:layout_constraintStart_toStartOf="@id/input_layout_game_title"
+        app:layout_constraintTop_toBottomOf="@id/input_layout_game_title">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_game_description"
+            android:layout_width="match_parent"
+            android:layout_height="190dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/add_game_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/red"
+        android:text="@string/add_game"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/input_layout_game_description" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

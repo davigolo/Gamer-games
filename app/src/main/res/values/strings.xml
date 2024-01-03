@@ -1,3 +1,85 @@
 <resources>
     <string name="app_name">Gamer games</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="platform_steam" translatable="false">Steam</string>
+    <string name="platform_ps" translatable="false">PlayStation</string>
+    <string name="platform_switch" translatable="false">Nintendo Switch</string>
+    <string name="platform_xbox" translatable="false">Xbox</string>
+    <string name="platform_stadia" translatable="false">Stadia</string>
+    <string name="platform_steamdeck" translatable="false">SteamDeck</string>
+    <string name="platfrom_añadir">Add</string>
+    <string name="platfrom_cancel">Cancel</string>
+    <string name="game_genres">Genres</string>
+    <string name="game_platforms">Platforms</string>
+    <string name="select_platform_dialog_title">Select platform(s)</string>
+    <string-array name="games_ordering">
+        <item>Descendant</item>
+        <item>Ascendant</item>
+    </string-array>
+    <string name="add_game_game_image">Game image</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="title_activity_login" translatable="false">LoginActivity</string>
+    <string name="prompt_email" translatable="false">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="title_activity_maps" translatable="false">MapsActivity</string>
+    <string name="OAuth" translatable="false">917636796888-re45oqecpeo21156iu3d7emeob85rc9g.apps.googleusercontent.com</string>
+    <string name="last_30_days_releases">Last 30 days releases</string>
+    <string name="releases">Releases</string>
+    <string name="weekly_releases">Weekly releases</string>
+    <string name="next_week_releases">Next week releases</string>
+    <string name="last_month_releases">Last month releases</string>
+    <string name="top_games">Top games</string>
+    <string name="top_250_games">Top 250 games</string>
+    <string name="best_of_the_year">Best of the year</string>
+    <string name="add_games">Add games</string>
+    <string name="liked">Liked</string>
+    <string name="my_games">My games</string>
+    <string name="games">Games</string>
+    <string name="delete_game_snackbar">¿Do you want to remove this game?</string>
+    <string name="delete">Delete</string>
+    <string name="error_authenticating_with_google">Error authenticating with Google</string>
+    <string name="error_on_googlesigninaccount_task" translatable="false">Error on GoogleSignInAccount Task</string>
+    <string name="user_signed_in" translatable="false">user signed in:</string>
+    <string name="error_while_logging_in">"Error while logging in "</string>
+    <string name="log_out">Log out</string>
+    <string name="search_on_rawg">Search on Rawg</string>
+    <string name="enter_game_title">Enter game title</string>
+    <string name="enter_game_description">Enter game description</string>
+    <string name="add_game">Add game</string>
+    <string name="email" translatable="false">Email</string>
+    <string name="password" translatable="false">Password</string>
+    <string name="google_signing_button" translatable="false">Google signing button</string>
+    <string name="facebook_signing_button" translatable="false">Facebook signing button</string>
+    <string name="log_in" translatable="false">Log in</string>
+    <string name="liked_game_button" translatable="false">Liked game button</string>
+    <string name="rating_image" translatable="false">Rating image</string>
+    <string name="release_date">Release date:</string>
+    <string name="playtime">Playtime:</string>
+    <string name="platforms">Platforms:</string>
+    <string name="genres">Genres:</string>
+    <string name="sign_in">Sign in</string>
+    <string name="game_details_image" translatable="false">Game details image</string>
+    <string name="app_logo" translatable="false">App logo</string>
+    <string name="play_it_save_it_share_it" translatable="false">Play it, save it, share it.</string>
+    <string name="add_games_button" translatable="false">Add games button</string>
+    <string name="profile_image" translatable="false">Profile image</string>
+    <string name="game_image" translatable="false">Game image</string>
+    <string name="new_games_are_coming">New games are coming…</string>
+    <string name="my_games_fragment_title">My Games</string>
+    <string name="last_month_releases_fragment_title">Last month releases</string>
+    <string name="liked_games_fragment_title">Liked Games</string>
+    <string name="add_new_games_fragment_title">Add new games</string>
+    <string name="next_week_releases_fragment_title">Next week releases</string>
+    <string name="weekly_releases_fragment_title">Weekly releases</string>
+    <string name="top_250_games_fragment_title">Top 250 games</string>
+    <string name="best_games_of_the_year_fragment_title">Best games of the year</string>
+
 </resources>

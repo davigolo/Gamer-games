@@ -1,0 +1,71 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/menu_games"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/games_title"
+            android:title="@string/games">
+            <menu>
+                <item
+                    android:id="@+id/nav_my_games_fragment"
+                    android:icon="@drawable/svg_controller_my_games_menu_button"
+                    android:title="@string/my_games" />
+
+                <item
+                    android:id="@+id/nav_my_list_fragment"
+                    android:icon="@drawable/svg_liked_game_menu_button"
+                    android:title="@string/liked" />
+                <item
+                    android:id="@+id/nav_add_games"
+                    android:icon="@drawable/svg_added_game_menu_button"
+                    android:title="@string/add_games" />
+            </menu>
+        </item>
+
+    </group>
+    <group
+        android:id="@+id/menu_releases"
+        android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/releases_title"
+            android:title="@string/releases">
+            <menu>
+                <item
+                    android:id="@+id/nav_weekly_releases"
+                    android:icon="@drawable/svg_flame_default_profile_image"
+                    android:title="@string/weekly_releases" />
+                <item
+                    android:id="@+id/nav_next_week_releases"
+                    android:icon="@drawable/svg_next_week_releases_menu_button"
+                    android:title="@string/next_week_releases" />
+                <item
+                    android:id="@+id/nav_last_month_releases"
+                    android:icon="@drawable/svg_last_month_releases_menu_button"
+                    android:title="@string/last_month_releases" />
+            </menu>
+        </item>
+
+    </group>
+
+    <group>
+        <item
+            android:id="@+id/top_games_title"
+            android:title="@string/top_games">
+
+            <menu>
+                <item
+                    android:id="@+id/nav_top_250_games"
+                    android:icon="@drawable/svg_trophy_top_250"
+                    android:title="@string/top_250_games" />
+                <item
+                    android:id="@+id/nav_best_of_the_year"
+                    android:icon="@drawable/svg_crown_best_of_the_year_menu_button"
+                    android:title="@string/best_of_the_year" />
+
+            </menu>
+
+        </item>
+    </group>
+</menu>

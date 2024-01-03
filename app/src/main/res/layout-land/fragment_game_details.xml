@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        tools:context=".views.fragments.GameDetailsFragment">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/child_fragment_image_games_carousel"
+            android:layout_width="match_parent"
+            android:layout_height="290dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="17dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            app:layout_constraintStart_toStartOf="@id/child_fragment_image_games_carousel"
+            app:layout_constraintTop_toBottomOf="@id/child_fragment_image_games_carousel"
+            tools:text="The Last of Us" />
+
+        <ImageButton
+            android:id="@+id/btn_liked_game"
+            android:layout_width="30dp"
+            android:layout_height="26dp"
+            android:layout_marginEnd="30dp"
+            android:background="@color/white"
+            android:contentDescription="@string/liked_game_button"
+            android:scaleType="centerCrop"
+            android:src="@drawable/svg_liked_game_details"
+            app:layout_constraintBottom_toBottomOf="@id/tv_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_title" />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="17dp"
+            app:dividerColor="#838080"
+            app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+        <ImageView
+            android:id="@+id/community_rating"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="17dp"
+            android:contentDescription="@string/rating_image"
+            android:src="@drawable/svg_rating_game_details"
+            app:layout_constraintStart_toStartOf="@id/tv_title"
+            app:layout_constraintTop_toBottomOf="@id/divider" />
+
+        <TextView
+            android:id="@+id/tv_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textColor="#ffd38d"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/community_rating"
+            app:layout_constraintStart_toEndOf="@id/community_rating"
+            app:layout_constraintTop_toTopOf="@id/community_rating"
+            tools:text="Rating" />
+
+        <TextView
+            android:id="@+id/release_date_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/release_date"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@id/community_rating"
+            app:layout_constraintTop_toBottomOf="@id/community_rating" />
+
+        <TextView
+            android:id="@+id/tv_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="@id/release_date_text"
+            app:layout_constraintStart_toEndOf="@id/release_date_text"
+            app:layout_constraintTop_toTopOf="@id/release_date_text"
+            tools:text="11-3-2023" />
+
+        <TextView
+            android:id="@+id/playtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/playtime"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@id/genres"
+            app:layout_constraintTop_toBottomOf="@id/genres" />
+
+        <TextView
+            android:id="@+id/tv_playtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/playtime"
+            app:layout_constraintStart_toEndOf="@id/playtime"
+            app:layout_constraintTop_toTopOf="@id/playtime"
+            tools:text="5" />
+
+        <TextView
+            android:id="@+id/platforms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/platforms"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@id/release_date_text"
+            app:layout_constraintTop_toBottomOf="@id/release_date_text" />
+
+        <TextView
+            android:id="@+id/tv_platforms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/game_platforms"
+            android:textColor="@color/black"
+            android:textSize="@dimen/games_genres_title"
+            app:layout_constraintBottom_toBottomOf="@id/platforms"
+            app:layout_constraintStart_toEndOf="@id/platforms"
+            app:layout_constraintTop_toTopOf="@id/platforms" />
+
+        <TextView
+            android:id="@+id/genres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/genres"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@id/community_rating"
+            app:layout_constraintTop_toBottomOf="@id/tv_platforms" />
+
+        <TextView
+            android:id="@+id/tv_genres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="@id/genres"
+            app:layout_constraintStart_toEndOf="@id/genres"
+            app:layout_constraintTop_toTopOf="@id/genres"
+            tools:text="Action, Adventure, Horror" />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="17dp"
+            app:dividerColor="#838080"
+            app:layout_constraintTop_toBottomOf="@id/tv_playtime" />
+
+        <TextView
+            android:id="@+id/child_fragment_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginTop="13dp"
+            android:textSize="17sp"
+            android:justificationMode="inter_word"
+            app:layout_constraintEnd_toEndOf="@id/divider2"
+            app:layout_constraintStart_toStartOf="@id/playtime"
+            app:layout_constraintTop_toBottomOf="@id/divider2"
+            tools:text="Game Description" />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:id="@+id/divider3"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="-9dp"
+            android:layout_marginEnd="17dp"
+            app:dividerColor="#838080"
+            app:layout_constraintTop_toBottomOf="@id/child_fragment_description" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
