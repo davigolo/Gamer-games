@@ -55,6 +55,6 @@
   
   ![Demo](https://github.com/davigolo/Gamer-games/assets/122548918/bfba95df-d6a1-402c-9745-115d0d177ea3)
   <br><br>
-  [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/feed/?trk=homepage-basic_sign-in-submit)
+  [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](www.linkedin.com/in/davigolo)
   [![Twitter](https://img.shields.io/badge/Twitter-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white)](https://twitter.com/GlezLomena)
 </div>
